@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Generated types (can be regenerated)
+src/generated/
+
+# Fixtures with real API responses (may contain sensitive data)
+tests/fixtures/real/
+
+# Snapshots downloaded from Cognigy (may contain sensitive data)
+snapshots/
+*.snapshot.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp

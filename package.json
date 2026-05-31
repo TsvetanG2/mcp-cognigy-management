@@ -1,0 +1,56 @@
+{
+  "name": "cognigy-ai-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP server for managing Cognigy.AI agents via REST API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cognigy-ai-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gen:types": "npx openapi-typescript ./openapi.json -o src/generated/cognigy-api.d.ts",
+    "mock": "prism mock ./openapi.json --port 4010",
+    "update:spec": "curl -o openapi.json https://api-trial.cognigy.ai/openapi/openapi-viewer.json",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "cognigy",
+    "ai-agents",
+    "model-context-protocol",
+    "conversational-ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@cognigy/rest-api-client": "^2026.11.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@stoplight/prism-cli": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "msw": "^2.0.0",
+    "openapi-typescript": "^7.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.1.7"
+  }
+}
