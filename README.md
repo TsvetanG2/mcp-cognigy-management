@@ -6,7 +6,7 @@
 
 ## What is this?
 
-**mcp-cognigy-management** is a local MCP server that enables AI coding assistants (Claude, Cursor, etc.) to build, configure, test, and operate [Cognigy.AI](https://www.cognigy.com/) conversational AI agents programmatically.
+**cognigy-ai-mcp-management-server** is a local MCP server that enables AI coding assistants (Claude, Cursor, etc.) to build, configure, test, and operate [Cognigy.AI](https://www.cognigy.com/) conversational AI agents programmatically.
 
 Instead of clicking through the Cognigy UI, you can now:
 - Create and manage flows, nodes, and intents via natural language
@@ -29,7 +29,7 @@ Instead of clicking through the Cognigy UI, you can now:
 npm install @cognigy/rest-api-client
 
 # 2. Install this MCP server
-npm install -g mcp-cognigy-management
+npm install -g cognigy-ai-mcp-management-server
 ```
 
 **Important:** The `@cognigy/rest-api-client` package is licensed under "Cognigy Proprietary License". By installing it, you agree to Cognigy's license terms.
@@ -68,7 +68,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "cognigy": {
       "command": "npx",
-      "args": ["mcp-cognigy-management"],
+      "args": ["cognigy-ai-mcp-management-server"],
       "env": {
         "COGNIGY_BASE_URL": "https://api-trial.cognigy.ai",
         "COGNIGY_API_KEY": "your-api-key-here"
@@ -87,7 +87,7 @@ Add to `.mcp.json` in your project root:
   "mcpServers": {
     "cognigy": {
       "command": "npx",
-      "args": ["mcp-cognigy-management"],
+      "args": ["cognigy-ai-mcp-management-server"],
       "env": {
         "COGNIGY_BASE_URL": "https://api-trial.cognigy.ai",
         "COGNIGY_API_KEY": "your-api-key-here"
@@ -106,7 +106,7 @@ Add to `.cursor/mcp.json`:
   "mcpServers": {
     "cognigy": {
       "command": "npx",
-      "args": ["mcp-cognigy-management"],
+      "args": ["cognigy-ai-mcp-management-server"],
       "env": {
         "COGNIGY_BASE_URL": "https://api-trial.cognigy.ai",
         "COGNIGY_API_KEY": "your-api-key-here"
@@ -235,7 +235,7 @@ Contributions are welcome! Please:
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/TsvetanG2/mcp-cognigy-management/issues)
+- **Issues:** [GitHub Issues](https://github.com/TsvetanG2/cognigy-ai-mcp-management-server/issues)
 - **Cognigy Docs:** [docs.cognigy.com](https://docs.cognigy.com)
 - **MCP Spec:** [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
