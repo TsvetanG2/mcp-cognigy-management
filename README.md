@@ -117,6 +117,7 @@ Add to `.cursor/mcp.json`:
 ```
 
 ## Available Tools
+[All Tools](https://github.com/TsvetanG2/cognigy-ai-mcp-management-server/blob/master/TOOLS.md)
 
 This server provides **132 MCP tools** organized by domain:
 
